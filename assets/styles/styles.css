@@ -1,47 +1,36 @@
+::selection {
+  background: #212121;
+  color: #f1f1f1;
+}
+
 body {
-  background-color: #212121;
-  font-family: 'Roboto', sans-serif;
+  background: #1f1f1f;
+  color: #212121;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
 
+p {
+  line-height: 1.35;
+}
+
 .business-card {
-  cursor: pointer;
-  height: 32rem;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 1s;
+  background: #f1f1f1;
+  height: 18rem;
   width: 32rem;
-}
-
-.business-card.flipped {
-  transform: rotateY(180deg);
-}
-
-.business-card__front, .business-card__back, .biography {
-  backface-visibility: hidden;
-  position: absolute;
-}
-
-.business-card__back {
-  background-color: #f1f1f1;
-  transform: rotateY(180deg);
-}
-
-.biography {
-  top: 0;
   padding: 1rem;
-  height: 100%;
-  opacity: 0;
-  transition: all ease-in-out 0.25s;
-  color: #f1f1f1;
-  line-height: 1.5rem;
+  border-radius: 1rem;
 }
 
-.biography:hover {
-  background: rgba(.85, .85, .85, 0.5);
-  opacity: 1;
-  transition: all ease-in-out 0.25s;
+.photo {
+  border-radius: 8rem;
+  height: 8rem;
+  width: 8rem;
+  float: right;
+  shape-outside: circle(50%);
 }
 
-.border-radius { border-radius: 1rem; }
-.perspective { perspective: 64rem; }
+.social-media-icon {
+  height: 2rem;
+  width: 2rem;
+}
