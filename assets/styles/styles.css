@@ -43,5 +43,10 @@ body {
   transition: all ease-in-out 0.25s;
 }
 
+.social-media-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
 .border-radius { border-radius: 1rem; }
 .perspective { perspective: 64rem; }
