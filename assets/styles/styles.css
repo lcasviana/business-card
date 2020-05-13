@@ -11,13 +11,21 @@ body {
 }
 
 p {
-  line-height: 1.35;
+  line-height: 1.5;
+}
+
+.main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: minmax(1fr, auto);
+  grid-template-rows: minmax(1fr, auto);
 }
 
 .business-card {
   background: #f1f1f1;
-  height: 18rem;
-  width: 32rem;
+  min-width: 100%;
+  max-width: 32rem;
   padding: 1rem;
   border-radius: 1rem;
 }
